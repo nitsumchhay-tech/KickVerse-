@@ -1,0 +1,340 @@
+/* ===========================
+   KickVerse V2
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#111;
+color:#fff;
+line-height:1.6;
+}
+
+/* NAVIGATION */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:#1a1a1a;
+border-bottom:1px solid #333;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#ff8c00;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ff8c00;
+}
+
+.icons{
+display:flex;
+gap:18px;
+font-size:20px;
+cursor:pointer;
+}
+
+.icons i:hover{
+color:#ff8c00;
+}
+
+/* HERO */
+
+.hero{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 30px;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.left{
+flex:1;
+}
+
+.left h1{
+font-size:58px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.left span{
+color:#ff8c00;
+}
+
+.left p{
+color:#bbb;
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 34px;
+background:#ff8c00;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+background:#ffa733;
+}
+
+.right{
+flex:1;
+text-align:center;
+}
+
+.right img{
+width:100%;
+max-width:520px;
+filter:drop-shadow(0 20px 35px rgba(255,140,0,.35));
+transition:.4s;
+}
+
+.right img:hover{
+transform:scale(1.05) rotate(-3deg);
+}
+
+/* SECTION */
+
+section{
+padding:80px 30px;
+}
+
+section h2{
+text-align:center;
+font-size:40px;
+margin-bottom:45px;
+}
+
+/* PRODUCTS */
+
+.grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+.card{
+background:#1d1d1d;
+border-radius:18px;
+overflow:hidden;
+transition:.35s;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:18px 18px 5px;
+}
+
+.card p{
+padding:0 18px 18px;
+color:#ff8c00;
+font-size:20px;
+font-weight:700;
+}
+
+.card button{
+margin:0 18px 20px;
+width:calc(100% - 36px);
+padding:13px;
+border:none;
+background:#ff8c00;
+color:white;
+font-size:16px;
+font-weight:600;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.card button:hover{
+background:#ffa733;
+}
+
+/* ABOUT */
+
+#about{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+#about p{
+color:#bbb;
+font-size:18px;
+}
+
+/* REVIEWS */
+
+.reviews{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.reviews div{
+background:#1d1d1d;
+padding:30px;
+border-radius:16px;
+text-align:center;
+}
+
+.reviews p{
+margin:15px 0;
+color:#ccc;
+}
+
+/* NEWSLETTER */
+
+form{
+max-width:650px;
+margin:auto;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+input{
+flex:1;
+min-width:240px;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+form button{
+padding:15px 35px;
+background:#ff8c00;
+color:white;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+form button:hover{
+background:#ffa733;
+}
+
+/* FOOTER */
+
+footer{
+background:#181818;
+padding:40px 20px;
+text-align:center;
+margin-top:40px;
+}
+
+footer h2{
+color:#ff8c00;
+margin-bottom:10px;
+}
+
+footer div{
+margin:20px 0;
+font-size:28px;
+display:flex;
+justify-content:center;
+gap:25px;
+}
+
+footer i{
+cursor:pointer;
+transition:.3s;
+}
+
+footer i:hover{
+color:#ff8c00;
+transform:scale(1.2);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.left h1{
+font-size:42px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+}
+
+.icons{
+justify-content:center;
+}
+
+section h2{
+font-size:32px;
+}
+
+}
